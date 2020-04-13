@@ -72,7 +72,7 @@ export default class Chat extends Component {
                 {this.state.error ? <p>{this.state.writeError}</p> : null}
                 <button type="submit">Send</button>
                 <div>
-                Login in: <strong>{this.state.user.email}</strong>
+                Login in as: <strong>{this.state.user.email}</strong>
               </div>
               </form>
               

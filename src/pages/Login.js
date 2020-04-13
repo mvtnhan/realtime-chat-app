@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { signin} from "../helpers/auth";
+import { signin } from "../helpers/auth";
 
 export default class Login extends Component {
   constructor(props) {
@@ -8,7 +8,7 @@ export default class Login extends Component {
     this.state = {
       error: null,
       email: "",
-      password: ""
+      password: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -16,7 +16,7 @@ export default class Login extends Component {
 
   handleChange(event) {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   }
 
@@ -33,19 +33,15 @@ export default class Login extends Component {
   render() {
     return (
       <div className="Login">
-        <form className="FormLogin"
+        <form
+          className="FormLogin"
           autoComplete="off"
           onSubmit={this.handleSubmit}
         >
           <h1>
-            Login to
-            <Link to="/">
-              Chatty
-            </Link>
+            Login to <Link to="/">Chatty</Link>
           </h1>
-          <p>
-            Fill in the form below to login to your account.
-          </p>
+          <p>Fill in the form below to login to your account.</p>
           <div>
             <input
               placeholder="Email"
@@ -65,9 +61,7 @@ export default class Login extends Component {
             />
           </div>
           <div>
-            {this.state.error ? (
-              <p>{this.state.error}</p>
-            ) : null}
+            {this.state.error ? <p>{this.state.error}</p> : null}
             <button type="submit">Login</button>
           </div>
           <hr />
