@@ -77,7 +77,7 @@ export default class SignUp extends Component {
               value={this.state.password}
             ></input>
           </div>
-          <div>
+          <div className="btn">
             {this.state.error ? <p>{this.state.error}</p> : null}
             <button type="submit">Sigin up</button>
             <p>Or</p>
