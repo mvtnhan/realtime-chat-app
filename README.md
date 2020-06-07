@@ -7,12 +7,12 @@ An application called Chatty.
 
 ## Home page
 
- <p align="center"><img src="./home.jpg" alt="Chatty" /></p>
+ <p align="center"><img src="./readme-images/home.jpg" alt="Chatty" /></p>
 
 ## Sign up page
 
- <p align="center"><img src="./signup.jpg" alt="Web boilerplate" /></p>
+ <p align="center"><img src="./readme-images/signup.jpg" alt="Web boilerplate" /></p>
 
 ## Chat page
 
- <p align="center"><img src="./chat.jpg" alt="Web boilerplate" /></p>
+ <p align="center"><img src="./readme-images/chat.jpg" alt="Web boilerplate" /></p>
